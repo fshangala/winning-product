@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800;900&amp;display=swap");
+
+:root {
+  --primary-color: #00ac00;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -143,11 +148,11 @@ body {
 }
 .header-section .navbar-nav .nav-item .nav-link:hover {
   color: #fff;
-  background: #225AEA;
+  background: var(--primary-color);
 }
 .header-section .navbar-nav .nav-item .nav-link.active {
   color: #fff;
-  background: #225AEA;
+  background: var(--primary-color);
 }
 .header-section .d-flex {
   align-items: center;
@@ -158,10 +163,10 @@ lottie-player {
 }
 .header-section .d-flex a:first-child {
   border-radius: 10px;
-  border: 1px solid #225AEA;
+  border: 1px solid var(--primary-color);
   background: #FFF;
   box-shadow: 0px 0px 25px 0px rgba(11, 105, 255, 0.25);
-  color: #225AEA;
+  color: var(--primary-color);
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -172,7 +177,7 @@ lottie-player {
   transition: all linear 0.2s;
 }
 .header-section .d-flex a:first-child:hover {
-  background-color: #225AEA;
+  background-color: var(--primary-color);
   color: #fff;
 }
 .logo-36 {
@@ -181,7 +186,7 @@ lottie-player {
 }
 .header-section .d-flex a:last-child {
   border-radius: 10px;
-  background: #225AEA;
+  background: var(--primary-color);
   box-shadow: 0px 0px 25px 0px rgba(11, 105, 255, 0.25);
   color: #FFF !important;
   font-size: 16px;
@@ -199,7 +204,7 @@ lottie-player {
 }
 .header-section .d-flex a:last-child:hover {
   background-color: #fff;
-  color: #225AEA;
+  color: var(--primary-color);
 }
 
 /* header css end */
@@ -220,7 +225,7 @@ lottie-player {
 .hero-txt-wrap h6 {
   border-radius: 11.441px;
   border: 1.144px solid rgba(255, 255, 255, 0.1);
-  background: #0B69FF;
+  background: var(--primary-color);
   display: inline-block;
   color: #FFF;
   font-size: 20.594px;
@@ -246,7 +251,7 @@ lottie-player {
   margin: 0.5rem 0;
 }
 .hero-txt-wrap h1 span {
-  color: #0B69FF;
+  color: var(--primary-color);
 }
 .hero-txt-wrap p {
   color: #181818;
@@ -267,7 +272,7 @@ lottie-player {
 .hero-txt-wrap .hero_btn a:last-child {
   font-size: 1.24rem;
   font-weight: 500;
-  color: #0B69FF;
+  color: var(--primary-color);
   line-height: 140%;
   background: transparent;
   display: inline-block;
@@ -278,7 +283,7 @@ lottie-player {
   flex-grow: 1;
 }
 .hero-txt-wrap .hero_btn button:last-child:hover {
-  background: #0B69FF;
+  background: var(--primary-color);
   color: #fff;
 }
 .hero-txt-wrap .hero_btn a:first-child {
@@ -286,7 +291,7 @@ lottie-player {
 }
 .hero-txt-wrap .hero_btn a:first-child, .free-trial-button {
   border-radius: 11.383px;
-  background: #0B69FF;
+  background: var(--primary-color);
   box-shadow: 0px 0px 25px 0px rgba(11, 105, 255, 0.25);
   color: #FFF;
   font-size: 20px;
@@ -350,7 +355,7 @@ lottie-player {
 }
 .common-heading h6 {
   border-radius: 10px;
-  background: #0B69FF;
+  background: var(--primary-color);
   color: #FFF;
   font-size: 16px;
   font-style: normal;
@@ -422,7 +427,7 @@ lottie-player {
   letter-spacing: -0.253px;
 }
 .feature-main-wrapper .feature-box-item:hover {
-  border-color: #0B69FF;
+  border-color: var(--primary-color);
 }
 
 .read-more {
@@ -443,7 +448,7 @@ lottie-player {
 }
 .read-more a {
   border-radius: 10.326px;
-  background: #0B69FF;
+  background: var(--primary-color);
   box-shadow: 0px 0px 30.9767417908px 0px #26A7F3;
   color: #FFF;
   font-size: 16.521px;
@@ -456,7 +461,7 @@ lottie-player {
 }
 .read-more a:hover {
   background-color: transparent;
-  color: #0B69FF;
+  color: var(--primary-color);
 }
 .read-more a i {
   margin-left: 0.4rem;
@@ -464,7 +469,7 @@ lottie-player {
 
 .dashboard-section .dashboard-main-wrap {
   border-radius: 25px;
-  background: #225AEA;
+  background: var(--primary-color);
   box-shadow: 0px 0px 250px 0px rgba(38, 167, 243, 0.15);
 }
 .dashboard-section .dashboard-main-wrap .dashboard-txt {
@@ -473,7 +478,7 @@ lottie-player {
 .dashboard-section .dashboard-main-wrap .dashboard-txt h6 {
   border-radius: 10px;
   background: #fff;
-  color: #0B69FF;
+  color: var(--primary-color);
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -504,7 +509,7 @@ lottie-player {
 .dashboard-section .dashboard-main-wrap .dashboard-txt a {
   border-radius: 10.326px;
   background: #fff;
-  color: #0B69FF;
+  color: var(--primary-color);
   font-size: 16.521px;
   font-style: normal;
   font-weight: 500;
@@ -530,7 +535,7 @@ lottie-player {
 
 .winging-txt h6 {
   border-radius: 10px;
-  background: #0B69FF;
+  background: var(--primary-color);
   color: #fff;
   font-size: 16px;
   font-style: normal;
@@ -574,7 +579,7 @@ lottie-player {
 }
 .get-start-txt h6 {
   border-radius: 10px;
-  background: #0B69FF;
+  background: var(--primary-color);
   color: #fff;
   font-size: 16px;
   font-style: normal;
@@ -604,7 +609,7 @@ lottie-player {
 }
 .get-start-txt a {
   border-radius: 10.326px;
-  background: #0B69FF;
+  background: var(--primary-color);
   color: #fff;
   font-size: 16.521px;
   font-style: normal;
@@ -617,7 +622,7 @@ lottie-player {
 }
 .get-start-txt a:hover {
   background-color: #fff;
-  color: #0B69FF;
+  color: var(--primary-color);
 }
 .get-start-txt a i {
   margin-left: 0.4rem;
@@ -625,7 +630,7 @@ lottie-player {
 
 .quote-txt {
   border-radius: 10.86px;
-  background: #0B69FF;
+  background: var(--primary-color);
   padding: 1.5rem 2.5rem;
   box-shadow: 0px 0px 250px 0px rgba(38, 167, 243, 0.15);
   text-align: center;
@@ -666,7 +671,7 @@ lottie-player {
 
 .save-section-txt a {
   border-radius: 9.902px;
-  background: #0B69FF;
+  background: var(--primary-color);
   box-shadow: 0px 0px 87.3791046143px 0px rgba(38, 167, 243, 0.5);
   color: #FFF;
   font-size: 17px;
@@ -687,7 +692,7 @@ lottie-player {
 
 .save-price-box {
   border-radius: 15px;
-  background: #0B69FF;
+  background: var(--primary-color);
   box-shadow: 0px 0px 250px 0px rgba(38, 167, 243, 0.15);
   padding: 1.5rem 2rem;
 }
@@ -759,7 +764,7 @@ lottie-player {
 }
 .price-main-header .nav .nav-item .nav-link.active {
   border-radius: 10px;
-  background: #0B69FF;
+  background: var(--primary-color);
   color: #fff;
 }
 .price-main-header h6 {
@@ -781,8 +786,8 @@ lottie-player {
 
 .pricing-box-wrap button {
   border-radius: 10px;
-  border: 1px solid #0B69FF;
-  background: #0B69FF;
+  border: 1px solid var(--primary-color);
+  background: var(--primary-color);
   width: 100%;
   display: block;
   color: #FFF;
@@ -815,7 +820,7 @@ lottie-player {
 }
 .pricing-box-wrap .media span {
   border-radius: 5px;
-  background: #0B69FF;
+  background: var(--primary-color);
   display: inline-block;
   color: #FFF;
   font-size: 12px;
@@ -898,7 +903,7 @@ lottie-player {
   padding: 0.5rem;
 }
 .most-popular .inner-wrapper {
-  background: #0B69FF;
+  background: var(--primary-color);
   border-radius: 10px;
   padding: 1.2rem;
 }
@@ -922,7 +927,7 @@ lottie-player {
 }
 .most-popular .inner-wrapper button {
   background-color: #fff;
-  color: #0B69FF;
+  color: var(--primary-color);
 }
 .most-popular h4 {
   color: #FFF;
@@ -1022,12 +1027,12 @@ lottie-player {
 }
 
 .faq-ask-wrap .accordion-item.border-custom {
-  border: 1.13px solid #0B69FF;
+  border: 1.13px solid var(--primary-color);
 }
 
 /* faq css end */
 .join-section {
-  background: #0B69FF;
+  background: var(--primary-color);
   padding: 2rem 0;
 }
 .join-section .join-txt h5 {
@@ -1062,7 +1067,7 @@ lottie-player {
 .join-section .join-bttn a {
   border-radius: 10.326px;
   background: #fff;
-  color: #0B69FF;
+  color: var(--primary-color);
   font-size: 16.521px;
   font-style: normal;
   font-weight: 500;
@@ -1074,7 +1079,7 @@ lottie-player {
 }
 .join-section .join-bttn a:hover {
   background-color: #fff;
-  color: #0B69FF;
+  color: var(--primary-color);
 }
 .join-section .join-bttn a i {
   margin-left: 0.4rem;
@@ -1167,7 +1172,7 @@ lottie-player {
 
 .common-button {
   border-radius: 10px;
-  background: #225AEA;
+  background: var(--primary-color);
   box-shadow: 0px 0px 25px 0px rgba(11, 105, 255, 0.25);
   color: #FFF;
   font-size: 16px;
@@ -1185,7 +1190,7 @@ lottie-player {
 }
 .common-button:hover {
   background-color: #fff;
-  color: #225AEA;
+  color: var(--primary-color);
 }
 
 /* tos css start */
@@ -1242,7 +1247,7 @@ lottie-player {
   right: 20px;
   display: none;
   cursor: pointer;
-  background-color: #0B69FF;
+  background-color: var(--primary-color);
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
@@ -1436,7 +1441,7 @@ body {
 }
 .header-section .d-flex a:last-child:hover {
   background-color: #fff;
-  color: #225AEA;
+  color: var(--primary-color);
 }*/
 
 /* header css end */
@@ -1483,11 +1488,11 @@ body {
   transition: ease-in 0.3s;
 }
 .add-inside-header-area .right a:hover {
-  border: 1px solid #225AEA;
+  border: 1px solid var(--primary-color);
   background: rgba(34, 90, 234, 0.1);
 }
 .add-inside-header-area .right a.active {
-  border: 1px solid #225AEA;
+  border: 1px solid var(--primary-color);
   background: rgba(34, 90, 234, 0.1);
 }
 
@@ -1540,7 +1545,7 @@ body {
 }
 .see-adss-box a:last-child {
   margin-left: 1rem;
-  border: 1px solid #225AEA;
+  border: 1px solid var(--primary-color);
 }
 
 .add-inside-header-area {
@@ -1612,7 +1617,7 @@ body {
   display: inline-block;
   margin-top: 1.56rem;
   border-radius: 0.5rem;
-  background: #225AEA;
+  background: var(--primary-color);
   padding: 0.89rem 2.4rem;
   color: #FFF;
   font-size: 0.875rem;
@@ -1670,7 +1675,7 @@ body {
 }
 .feat-box-area .media img {
   border-radius: 0.625rem;
-  background: linear-gradient(180deg, #225AEA 0%, #104BE2 100%);
+  background: linear-gradient(180deg, var(--primary-color) 0%, #104BE2 100%);
   padding: 0.75rem;
   margin-right: 1.06rem;
 }
@@ -1770,7 +1775,7 @@ body {
 .ads-run-away-box .icon {
   margin: 0.6rem 0;
   border-radius: 0.3125rem;
-  background: linear-gradient(180deg, #225AEA 0%, #1C52DD 100%);
+  background: linear-gradient(180deg, var(--primary-color) 0%, #1C52DD 100%);
   width: 3.8125rem;
   height: 3.8125rem;
   display: inline-flex;
@@ -1785,7 +1790,7 @@ body {
   line-height: normal;
 }
 .ads-run-away-box span {
-  color: #225AEA;
+  color: var(--primary-color);
   display: inline-block;
   font-size: 0.875rem;
   font-style: normal;
@@ -1815,7 +1820,7 @@ body {
   top: 10px;
   width: 75%;
   height: 1px;
-  background-color: #225AEA;
+  background-color: var(--primary-color);
 }
 .ads-run-away-box span:after {
   position: absolute;
@@ -1824,7 +1829,7 @@ body {
   top: 10px;
   width: 75%;
   height: 1px;
-  background-color: #225AEA;
+  background-color: var(--primary-color);
 }
 
 .footer-section {
