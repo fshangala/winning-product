@@ -1,131 +1,1218 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Winning Product</title>
-    <link href="assets/css/style.css" rel="stylesheet">
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-  </head>
-  <body>
-    <nav class="navbar">
-      <div class="container">
-        <a href="home.html" class="brand">
-          <img src="assets/images/logo.svg" alt="logo">
-          <b>Winning Product</b>
-        </a>
-        <div class="topnav">
-          <a href="#" class="topnav-link active">Facebook Ads</a>
-          <a href="#" class="topnav-link">Meta Advertisers</a>
-          <a href="#" class="topnav-link">Tiktok Creative Center</a>
-          <a href="#" class="topnav-link">Sales Tracker</a>
-          <a href="#" class="topnav-link">Magic AI</a>
-          <a href="#" class="topnav-link">Saved Ads</a>
-        </div>
-        <div class="actions">
-          <button class="btn btn-primary">Upgrade</button>
-          <button class="btn">Tutorials</button>
-          <button class="btn-avatar">
-            <img src="assets/images/user.jpg" alt="user" class="avatar" />
-          </button>
-        </div>
-      </div>
-    </nav>
-    <div class="main">
-      <div class="header-container">
-        <div class="header">
-          <img src="assets/images/facebook.svg" alt="facebook" />
-          <h1>Search Facebook Ads</h1>
-        </div>
-        <hr class="divider">
-      </div>
-      <div class="filter-container" x-data="facebookFilter">
-        <div class="input-group filter">
-          <input type="text" name="search" class="input" placeholder="Search..." />
-        </div>
-        <div class="input-group filter">
-          <label>Search Keyword In</label>
-          <select class="input" x-model="keywordIn">
-            <option value="all">All</option>
-            <option value="ad-text">Ad Text</option>
-          </select>
-        </div>
-        <div class="input-group filter">
-          <label>Country</label>
-          <select class="input" x-model="country">
-            <option value="usa">USA</option>
-            <option value="united-kingdom">United Kingdom</option>
-          </select>
-        </div>
-        <div class="input-group filter">
-          <label>Website</label>
-          <select class="input" x-model="website">
-            <option value="shopify">Shopify</option>
-            <option value="xshoppy">XShoppy</option>
-          </select>
-        </div>
-        <div class="input-group filter">
-          <label>Language</label>
-          <select class="input" x-model="language">
-            <option value="english">English</option>
-            <option value="french">French</option>
-          </select>
-        </div>
-        <div class="input-group filter" x-data="{openActiveAdsetsSelector:false}">
-          <label>Active Adsets</label>
-          <div class="dropdown">
-            <button type="button" x-text="activeAdSets()" class="input" @click="openActiveAdsetsSelector= !openActiveAdsetsSelector"></button>
-            <div class="dropdown-content" x-show="openActiveAdsetsSelector">
-              <div class="input-group">
-                <label>Minimum</label>
-                <input type="number" class="input" x-model="activeAdSetsMin">
-              </div>
-              <div class="input-group">
-                <label>Maximum</label>
-                <input type="number" class="input" x-model="activeAdSetsMax">
+
+
+<!-- Mirrored from winninghunter.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 07 Apr 2024 11:53:28 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta content="Find Winning Products, the best dropshipping adspy spytool - WinningHunter" property="og:title">
+  <meta content="Find Winning Products, the best dropshipping adspy spytool - WinningHunter" property="twitter:title">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="WinningHunter - The Best Adspy Dropshipping Spytool, Find Winning products fast for dropshipping" name="description">
+  <meta content="WinningHunter - The Best Adspy Dropshipping Spytool, Find Winning products fast for dropshipping" property="og:description">
+  <meta content="WinningHunter - The Best Adspy Dropshipping Spytool, Find Winning products fast for dropshipping" property="twitter:description">
+  <meta content="https://winninghunter.com/images/5c2c931eda6c5f8f59957490235792fa.png" property="og:image">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="winninghunter.com">
+  <meta property="twitter:url" content="index.html">
+  <meta content="https://winninghunter.com/images/5c2c931eda6c5f8f59957490235792fa.png" property="twitter:image">
+  <meta property="og:type" content="website">
+  <meta name="google" content="notranslate">
+  <meta name="theme-color" content="#fafafa">
+  <script src="../unpkg.com/%40lottiefiles/lottie-player%402.0.4/dist/lottie-player.js"></script>
+  <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
+
+  <!-- Bootstrap CSS start -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <!-- Bootstrap CSS end -->
+
+  <!-- plugin CSS start -->
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+  <!-- plugin CSS end -->
+
+  <!-- custom CSS start -->
+  <link rel="stylesheet" href="assets/css/style1dd9.css?t=1712490808">
+  <link rel="stylesheet" href="assets/css/responsive1dd9.css?t=1712490808">
+  <!-- custom CSS end -->
+  <script defer src="../cdn.jsdelivr.net/npm/%40finsweet/attributes-autovideo%401/autovideo.js"></script>
+  <!-- <script src="https://script.tapfiliate.com/tapfiliate.js" type="text/javascript" async></script>
+<script type="text/javascript">
+  (function(t,a,p){t.TapfiliateObject=a;t[a]=t[a]||function(){
+  (t[a].q=t[a].q||[]).push(arguments)}})(window,'tap');
+
+  tap('create', '41954-ef4fb0', { integration: "stripe" });
+  tap('detect');
+</script> -->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11337683867"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-11337683867');
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RZ6VXM49TC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-RZ6VXM49TC');
+</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W4S69TLR');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W4S69TLR"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+<!-- Reddit Pixel -->
+<script>
+!function(w,d){if(!w.rdt){var p=w.rdt=function(){p.sendEvent?p.sendEvent.apply(p,arguments):p.callQueue.push(arguments)};p.callQueue=[];var t=d.createElement("script");t.src="../www.redditstatic.com/ads/pixel.js",t.async=!0;var s=d.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}}(window,document);rdt('init','a2_dr81d2tb849o', {"optOut":false,"useDecimalCurrencyValues":true});
+
+
+rdt('track', 'PageVisit');
+
+</script>
+
+
+<!-- DO NOT MODIFY UNLESS TO REPLACE A USER IDENTIFIER -->
+<!-- End Reddit Pixel -->
+
+<script src="../unpkg.com/nprogress%400.2.0/nprogress.js"></script>
+<link href="../unpkg.com/nprogress%400.2.0/nprogress.css" rel="stylesheet">
+  <title>Find Winning Products, the best dropshipping adspy spytool - WinningHunter</title>
+
+<!-- DO NOT MODIFY -->
+<!-- Quora Pixel Code (JS Helper) -->
+<script>
+!function(q,e,v,n,t,s){if(q.qp) return; n=q.qp=function(){n.qp?n.qp.apply(n,arguments):n.queue.push(arguments);}; n.queue=[];t=document.createElement(e);t.async=!0;t.src=v; s=document.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t,s);}(window, 'script', '../a.quora.com/qevents.js');
+qp('init', '959b2b2a58db44c3b96165dd51cf351c');
+qp('track', 'ViewContent');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://q.quora.com/_/ad/959b2b2a58db44c3b96165dd51cf351c/pixel?tag=ViewContent&amp;noscript=1"/></noscript>
+<!-- End of Quora Pixel Code -->
+
+<style type="text/css">
+
+
+
+
+</style>
+</head>
+
+<body>
+
+  <!-- hero section @S -->
+  <section class="hero-section">
+  
+  <a href="signup.html"><div style="padding:10px;background:#225AEA;"><h2 style="font-size:14px;color:white;text-align:center;">🎉 Sales Tracker back with 98% accuracy, <span style="text-decoration:underline;">Try it out &gt;</span></h2></div></a>
+
+<!-- nav section @S -->
+<nav class="navbar header-section navbar-expand-lg navbar-light">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="images/0fda3f6d5cc61ff90440b8885552ac3e.png" alt="Logo" class="img-fluid" width="230px">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+      aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fa fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav m-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="pricing.html">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="faq.html">FAQs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://partner.winninghunter.com/">Affiliates</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="contact.html">Contact</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <a href="login.html" class="no-underline">Log In</a>
+        <a href="signup.html" class="no-underline">Start for Free <i class="fa fa-angle-right"></i></a>
+      </form>
+    </div>
+  </div>
+</nav>
+<!-- nav section @E -->  
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="hero-txt-wrap">
+            <h1>Find <span> Winning Products</span> In Seconds<br>
+              <span>NOT</span> Days <span style="font-size:25px;">(Or never)</span>
+            </h1>
+            <p>Experience Tiktok Ads,
+              Facebook Ads, see their spend, revenue & adset amount. Track your competitor's stores.</p>
+
+            <div class="hero_btn">
+              <a href="signup.html" type="button" class="btn btn-label">Start Searching <span style="color: #e9e9e9;font-weight: 400;">- It's free</span><!-- <i class="fa fa-angle-right"></i> --></a>
+              <!--<a href="https://chrome.google.com/webstore/detail/winninghunter-dropship-sh/ofenhchfafengnagpcdininabjdogalg" target="__BLANK" class="btn btn-learn"> <img src="/images/google-chrome-small-icon.svg"> Install Extension </a> -->
+            </div>
+
+            <div class="network-logo-wrapper" >
+                <img src="https://global-uploads.webflow.com/60352a9beb7f922ce2aa6d6a/651ee746835f453a27efe67e_facebook.svg" loading="lazy" alt="" class="network-logo">
+                <img src="https://global-uploads.webflow.com/60352a9beb7f922ce2aa6d6a/651ee746107cdc7759f6018a_tiktok.svg" loading="lazy" alt="" class="network-logo">
+                <img src="https://global-uploads.webflow.com/60352a9beb7f922ce2aa6d6a/651ee746b981486b207053a1_instagram.svg" loading="lazy" alt="" class="network-logo">
+            </div>
+
+          </div>
+<!--           <div class="trustpilot-box">
+            <div class="media">
+              <img src="/assets/images/trustpilot-logo.svg" alt="trustpilot" class="img-fluid">
+              <div class="media-body">
+                <h6>Rated 4.9/5.0</h6>
+                <p>More than 1000 local business use this</p>
               </div>
             </div>
+          </div> -->
+        </div>
+        <div class="col-lg-6">
+          <div class="hero-img d-none d-lg-block">
+            <lottie-player src="assets/animations/scene-1-animation.json" background="transparent.html" style="margin-top:-20%" speed="1" loop autoplay></lottie-player>
           </div>
         </div>
-        <div class="input-group filter" x-data="{openAdspendSelector:false}">
-          <label>Adspend</label>
-          <div class="dropdown">
-            <button type="button" x-text="adspend()" class="input" @click="openAdspendSelector= !openAdspendSelector"></button>
-            <div class="dropdown-content" x-show="openAdspendSelector">
-              <div class="input-group">
-                <label>Minimum</label>
-                <input type="number" class="input" x-model="adspendMin">
+      </div>
+<!--       <div class="d-flex items-center justify-content-center gap-2 py-2">
+        <video class="preview-video rounded-xl shadow-2xl" autoplay muted loop>
+          <source src="/images/202310232033_prev.mp4" type="video/mp4">
+        </video>
+      </div> -->
+        <!-- video section start -->
+        <section class="video-section pa-y4">
+          <div class="container">
+            <div class="row d-flex align-items-center justify-content-center">
+<!--               <div class="col-12">
+                <div class="common-heading">
+                  <h6>TUTORIAL VIDEO</h6>
+                  <h2>How 7 FIGURES+ Dropshippers do Product Research</h2>
+                </div>
+              </div> -->
+              <div class="col-10 tutorial-video-wrapper">
+  <!--                 <script src="https://fast.wistia.com/embed/medias/oezpp1afks.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;border-radius:10px;overflow: hidden;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_5w3lac7rww seo=true videoFoam=true" style="height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/5w3lac7rww/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" /></div></div></div></div> -->
+                  <script src="https://fast.wistia.com/embed/medias/5w3lac7rww.jsonp" async></script><script src="../fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:58.33% 0 0 0;position:relative;border-radius:10px;overflow: hidden;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_5w3lac7rww seo=true videoFoam=true" style="height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/5w3lac7rww/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" /></div></div></div></div>
               </div>
-              <div class="input-group">
-                <label>Maximum</label>
-                <input type="number" class="input" x-model="adspendMax">
+              <div style="display:flex;justify-content:center;margin-top:10px;">
+                <a href="signup.html" type="button" class="btn btn-label free-trial-button">Try Free <i class="fa fa-angle-right"></i></a>
               </div>
+
             </div>
           </div>
+        </section>
+        <!-- video section end -->
+  </section>
+  <!-- hero section @E -->
+
+
+  <!-- company logo start -->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="common-heading">
+            <h6>WE ARE TRUSTED BY</h6>
+          </div>
         </div>
-        <div class="input-group filter">
-          <label>Sort By</label>
-          <select class="input" x-model="sortBy">
-            <option value="consistency">Consistency</option>
-            <option value="french">French</option>
-          </select>
-        </div>
-        <div class="input-group filter">
-          <button class="input" x-bind:class="sortDirection == 'ascending' ? 'active' : ''" @click="sortDirection='ascending'">
-            <div class="row">
-              <img src="assets/images/arrow.svg" width="25px">
-              <img src="assets/images/sort.svg" width="25px">
-            </div>
-          </button>
-          <button class="input" x-bind:class="sortDirection == 'ascending' ? '' : 'active'" @click="sortDirection='descending'">
-            <div class="row">
-              <img src="assets/images/arrow.svg" style="transform: scaleY(-1);" width="25px">
-              <img src="assets/images/sort.svg" width="25px">
-            </div>
-          </button>
+        <div class="col-12">
+          <div class="company-logo-wrap">
+            <a href="#">
+              <img src="assets/images/company-log-1.svg" alt="company-log" class="img-fluid">
+            </a>
+            <a href="#">
+              <img src="assets/images/company-log-2.svg" alt="company-log" class="img-fluid">
+            </a>
+            <a href="#">
+              <img src="assets/images/company-log-3.svg" alt="company-log" class="img-fluid">
+            </a>
+            <a href="#">
+              <img src="assets/images/company-log-4.svg" alt="company-log" class="img-fluid">
+            </a>
+          </div>
         </div>
       </div>
     </div>
-    <script src="assets/js/main.js"></script>
-  </body>
+  </section>
+  <!-- company logo end -->
+
+
+  <!-- feature section start -->
+  <section class="feature-section pa-y4" id="features">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="common-heading">
+            <h6>FEATURES</h6>
+            <h2>All-in-One Features.<br> Feels like Magic.</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="feature-main-wrapper">
+            <!-- item -->
+            <div class="feature-box-item">
+              <div class="icon">
+                <img src="assets/images/fb.svg" alt="FB" class="img-fluid">
+              </div>
+              <div class="txt">
+                <h5>Facebook Ads</h5>
+                <p>Find Winning Facebook Ads & Products within a SECOND. Filter on adsets & dropship ads.</p>
+              </div>
+            </div>
+            <!-- item -->
+            <!-- item -->
+            <div class="feature-box-item">
+              <div class="icon">
+                <img src="assets/images/meta.svg" alt="FB" class="img-fluid">
+              </div>
+              <div class="txt">
+                <h5>Meta Advertisers</h5>
+                <p>Filter through hundreds of thousands of Meta Advertisers.</p>
+              </div>
+            </div>
+            <!-- item -->
+            <!-- item -->
+            <div class="feature-box-item">
+              <div class="icon">
+                <img src="assets/images/tiktok.svg" alt="FB" class="img-fluid">
+              </div>
+              <div class="txt">
+                <h5>TikTok Ads</h5>
+                <p>Filter Tiktok Ads By dropship ads.</p>
+              </div>
+            </div>
+            <!-- item -->
+            <!-- item -->
+            <div class="feature-box-item">
+              <div class="icon">
+                <img src="assets/images/sales.svg" alt="FB" class="img-fluid">
+              </div>
+              <div class="txt">
+                <h5>Sales Tracker</h5>
+                <p>Track EVERY store's sales up to 98% accurately.</p>
+              </div>
+            </div>
+            <!-- item -->
+            <!-- item -->
+            <div class="feature-box-item">
+              <div class="icon">
+                <img src="assets/images/tiktokads.svg" alt="FB" class="img-fluid">
+              </div>
+              <div class="txt">
+                <h5>TikTok Creative<br>
+                  Center Ads</h5>
+                <p>Remove watermarks from TikTok Creative<br>
+                  Center ads.
+                </p>
+              </div>
+            </div>
+            <!-- item -->
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="read-more">
+            <p>Are you ready to find winning products?</p>
+            <a href="signup.html">Start Free <i class="fa fa-angle-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- feature section end -->
+
+  <!-- dashboard section start -->
+  <section class="dashboard-section pa-y4">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="dashboard-main-wrap">
+            <div class="row align-items-center">
+              <div class="col-lg-6 order-2 order-lg-1">
+                <div class="dashboard-txt">
+                  <h6>Product Research</h6>
+                  <h3>See the revenue <br>and adspend of ads</h3>
+                  <p>Ads are classed with an adscore (testing, scaling or winning) and reasons why the ad is scored that way. <br>It will also show you the revenue and the amount the ad has spent.<br><br> Get ready to expierence the magic.</p>
+                  <a href="signup.html">Start Free <i class="fa fa-angle-right"></i></a>
+                </div>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2">
+                <div class="dashboard-img">
+                  <img src="images/revenue_adscore.gif" alt="Dashboard" class="img-fluid" style="height:auto;width: 300px;display: block;border-radius: 20px;margin: 0 auto;box-shadow: 0px 0px 87.3791046143px 0px rgba(255, 255, 255, 0.5);margin-bottom: 10px;">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- dashboard section end -->
+
+  <!-- dashboard section start -->
+  <section class="dashboard-section pa-y4">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="dashboard-main-wrap pb-4">
+            <div class="row align-items-center">
+              <div class="col-lg-6 order-2 order-lg-1 px-4">
+                <div class="dashboard-img">
+                  <img src="images/ezgif-4-19a35e63f5.gif" alt="Dashboard" class="img-fluid" style="height:auto;width: 550px;display: block;border-radius: 20px;margin: 0 auto;box-shadow: 0px 0px 87.3791046143px 0px rgba(255, 255, 255, 0.5);margin-bottom: 10px;">
+                </div>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2">
+                <div class="dashboard-txt">
+                  <h6>Dropship Ads</h6>
+                  <h3>See only dropship ads</h3>
+                  <p>Filter quickly and easily with built-in filter presets. See only dropship ads or only fashion dropship ads.</p>
+                  <p>Don't know what filters work best? No problem we offer a free guide on signup that 8-figure dropshippers actively use.</p>
+                  <a href="signup.html">Try Now <i class="fa fa-angle-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- dashboard section end -->
+
+  <!-- dashboard section start -->
+  <section class="dashboard-section pa-y4">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="dashboard-main-wrap">
+            <div class="row align-items-center py-4">
+              <div class="col-lg-6 order-1 order-lg-2">
+                <div class="dashboard-img">
+                  <img src="images/fb-filtering.gif" alt="Dashboard" class="img-fluid" style="height:auto;width: 300px;display: block;border-radius: 20px;margin: 0 auto;box-shadow: 0px 0px 87.3791046143px 0px rgba(255, 255, 255, 0.5);margin-bottom: 10px;">
+                </div>
+              </div>
+              <div class="col-lg-6 order-2 order-lg-1">
+                <div class="dashboard-txt">
+                  <h6>Advanced filtering</h6>
+                  <h3>Filter based on anything <br>you desire</h3>
+                  <p>Filter based on adset amount, installed apps, searches, countries, languages, niches, dates & way more.</p>
+                  <br>
+                  <p>Fun Fact: Did you know Facebook doesn't give you their real start and end dates of the ads they show. Want to see the real dates? Sign up and find out!</p>
+                  <a href="signup.html">Try Now <i class="fa fa-angle-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- dashboard section end -->
+
+
+  <!-- winning section start -->
+  <section class="wining-section py-2">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6  order-2 order-lg-1">
+          <div class="winging-txt ps-md-5">
+            <h6>Sales Tracker</h6>
+            <h3>Track Store Revenues <br>
+              Down To Product Variants</h3>
+            <p>Our unique approach combines huge amounts of data from multiple platforms to deliver up to 98% accuracy
+              in revenue tracking. With this level of precision you can make informed decisions and take your business
+              to the next level.</p>
+            <p>Data about the store gets updated in real-time, no 24 hours wait time. Say goodbye to guesswork and hello
+              to success.</p>
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2">
+          <div class="wining-img">
+            <lottie-player src="assets/animations/scene-2-animation.json" background="transparent.html"  speed="1" loop autoplay></lottie-player>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- winning section end -->
+
+  <!-- get start -->
+  <section class="get-start py-2">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="get-start-txt">
+            <h6>WINNINGHUNTER AI</h6>
+            <h3>Write persuasive Ad Copies <br>
+              with AI</h3>
+            <p>Unleash the creative genius of WinningHunter AI! Say goodbye to adcopy struggles and hello to irresistible, high-converting ads. Let WinningHunter AI <br> be your secret weapon for adcopy magic and advertising domination.</p>
+            <img src="images/ai-generator.gif" style="display:block;border-radius: 20px;margin: 0 auto;box-shadow: 0px 0px 87.3791046143px 0px rgba(255, 255, 255, 0.5);margin-bottom: 10px;max-width: 100%;">
+            <a href="signup.html">Start Free <i class="fa fa-angle-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- get start -->
+
+  <!-- winning section start -->
+  <section class="wining-section py-2">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="wining-img">
+            <lottie-player src="assets/animations/scene-3-animation.json" background="transparent.html"  speed="1" loop autoplay></lottie-player>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="winging-txt">
+            <!-- <h6>WHY WE ARE BETTER</h6> -->
+            <h3>Used By Your Competitors</h3>
+            <p>With WinningHunter, you can view what products a store is
+              selling and how much revenue they are making in real-time.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- winning section end -->
+
+  <!-- quote section start -->
+  <section class="quote-section pa-y4 pt-0">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="quote-txt">
+            <img src="assets/images/quote-up.svg" alt="a" class="img-fluid">
+            <h6>"I have tested many dropshipping product research softwares throughout the years. However, I can confidently say that WinningHunter CRUSHES them all. It is truly the best solution you should vent to if you're looking to find your next winning product. I just love it."</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- quote section end -->
+
+   <!-- dashboard section start -->
+   <section class="dashboard-section pa-y4 dashboard-2-wrap">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="dashboard-main-wrap">
+            <div class="row align-items-center" style="padding: 30px;">
+              <div class="col-lg-5">
+                <div class="dashboard-img">
+                  <img alt="phone" class="img-fluid" src="images/ezgif-5-b65b2bf88f.gif" style="border-radius: 30px 30px;">
+                </div>
+              </div>
+              <div class="col-lg-7 ps-0">
+                <div class="dashboard-txt">
+                  <h6>WINNINGHUNTER Tiktok Top Ads</h6>
+                  <h3>Download  <img src="assets/images/tik.svg" alt="phone" class="img-fluid"> TikTok Creative Center Ads <br>
+                    without a Watermark</h3>
+                  <p>The Creative Center gives so much data, but was made for inspiration only: We made it into a Product Research Tool by being able to remove the watermark on every ad.</p>
+                  <a href="signup.html">Start Free <i class="fa fa-angle-right"></i></a>
+                </div>
+              </div> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- dashboard section end -->
+
+  <!-- save section start -->
+<section class="save-section pa-y4">
+<div class="container">
+  <div class="row">
+    <div class="col-lg-5"> 
+      <div class="winging-txt save-section-txt">
+        <h6>COMPARE</h6>
+        <h3>How much you can save <br> with WinningHunter</h3>
+        <p>Are you done with spending hundreds of bucks for different kind of tools?</p>
+
+          <p>WinningHunter ensures you're getting the best of all tools, all in one. Save over €400/month with even the cheapest plan.</p>
+            <a href="signup.html">Get Started <i class="fa fa-angle-right"></i></a>
+      </div>
+    </div>
+    <div class="col-lg-7">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="save-price-box">
+            <a href="#">
+              <img src="assets/images/save-log-01.png" alt="save-log" class="img-fluid">
+            </a>
+            <ul>
+              <li><img src="assets/images/check.svg" alt="Check" class="img-fluid">Facebook AdSpy</li>
+              <li><img src="assets/images/check.svg" alt="Check" class="img-fluid">Instagram AdSpy</li>
+              <li><img src="assets/images/check.svg" alt="Check" class="img-fluid">TikTok AdSpy</li>
+              <li><img src="assets/images/check.svg" alt="Check" class="img-fluid">Sales Tracker</li>
+              <li><img src="assets/images/check.svg" alt="Check" class="img-fluid">WinningHunter AI</li>
+              <li><img src="assets/images/check.svg" alt="Check" class="img-fluid">Daily Updates</li>
+              <li><img src="assets/images/check.svg" alt="Check" class="img-fluid">Analysis of all the ads of a shop</li>
+              <li><img src="assets/images/check.svg" alt="Check" class="img-fluid">Product competitor research</li>
+              <li><img src="assets/images/check.svg" alt="Check" class="img-fluid">TikTok Creative Center (exclusive)</li>
+            </ul>
+            <h6>
+              NO EXTRA COSTS, INCLUDED IN ALL OUR PLANS AT  <span>$0</span>
+            </h6>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="save-price-box without-txt">
+            <a href="#">
+              <img src="assets/images/without.svg" alt="save-log" class="img-fluid">
+            </a>
+            <ul>
+              <li><img src="assets/images/dot.svg" alt="dot" class="img-fluid">Facebook AdSpy</li>
+              <li><img src="assets/images/dot.svg" alt="dot" class="img-fluid">Instagram AdSpy</li>
+              <li><img src="assets/images/dot.svg" alt="dot" class="img-fluid">TikTok AdSpy</li>
+              <li><img src="assets/images/dot.svg" alt="dot" class="img-fluid">Sales Tracker</li>
+              <li><img src="assets/images/dot.svg" alt="dot" class="img-fluid">AI TOOL</li>
+              <li><img src="assets/images/dot.svg" alt="dot" class="img-fluid">Analysis of all the ads of a shop</li>
+              <li><img src="assets/images/dot.svg" alt="dot" class="img-fluid">Product competitor research</li>
+            </ul>
+            <h6>
+              CUMULATIVE SUBSCRIPTIONS 
+              AMOUNT TO <span>$400+</span>
+            </h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<!-- save section end -->
+  <!-- pricing section @S -->
+  <section class="pricing-section pa-y4" id="pricing-sec">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="common-heading">
+            <h6>PRICING</h6>
+            <h2><span class="text-primary">Lock In</span> Your Price</h2>
+            <p>Not Only Better But Also <a href="#" class="link-text">CHEAPER</a>! Take Advantage of Unlimited Usage on all our Tools. Lock In your price for lifetime before we raise our prices!</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="price-main-header">
+            <ul class="nav nav-pills" id="pills-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Bill Monthly</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Bill Annually</button>
+              </li> 
+            </ul>
+            <h6>Save 40% with annual billing</h6>
+          </div>
+        </div>
+      </div>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="pricing-box-wrap">
+                <div class="media">
+                  <div class="media-body">
+                    <img src="assets/images/user-icon.svg" alt="a" class="img-fluid">
+                    <h6>Basic Plan</h6>
+                  </div>
+                  <span>LOCK IN YOUR PRICE</span>
+                </div> 
+                <p>If you want to get started with finding winning products</p>
+                <h3>€49/<span>mo</span>  </h3>  
+                <ul>
+                  <li><img src="assets/images/check-icon.svg" alt="a" class="img-fluid"> Full Access to Dashboard</li>
+                  <li><img src="assets/images/check-icon.svg" alt="a" class="img-fluid"> Facebook Ads </li>
+                  <li><img src="assets/images/check-icon.svg" alt="a" class="img-fluid"> Meta Advertisers </li>
+                  <li><img src="assets/images/check-icon.svg" alt="a" class="img-fluid"> TikTok Ads </li>
+                  <li><img src="assets/images/check-icon.svg" alt="a" class="img-fluid"> Limited Dashboard Filters </li>
+                  <li><img src="assets/images/check-icon.svg" alt="a" class="img-fluid"> Track 25 Stores </li>
+                  <li><img src="assets/images/check-icon.svg" alt="a" class="img-fluid"> Magic AI Search</li>
+                  <li><img src="assets/images/check-icon.svg" alt="a" class="img-fluid"> 24/7 Customer Service</li> 
+                </ul>
+                <a class="no-underline" href="signup.html"><button type="button" class="btn btn-plan">Start for Free <i class="fa fa-angle-right"></i></button></a>
+              </div>
+            </div> 
+            <div class="col-lg-4">
+              <div class="pricing-box-wrap most-popular">
+                <h4>MOST POPULAR</h4>
+                <div class="inner-wrapper">
+                 
+                <div class="media">
+                  <div class="media-body">
+                    <img src="assets/images/user-icon.svg" alt="a" class="img-fluid">
+                    <h6>Standard Plan</h6>
+                  </div>
+                  <span>LOCK IN YOUR PRICE</span>
+                </div> 
+                <p>The most efficient, money saving plan. Save money on testing products by doing good product research - filter by adspend &amp; scaling.</p>
+                <h3>€79/<span>mo</span> <span class="badge text-bg-primary discount-old-price">€99/mo</span> </h3>  
+                <ul>
+                  <li><img src="assets/images/check-icon.svg" alt="a" class="img-fluid"> Full Access to Dashboard</li>
+                  <li><img src="assets/images/check-icon.svg" alt="a" class="img-fluid"> Facebook Ads </li>
+                  <li><img src="assets/images/check-icon.svg" alt="a" class="img-fluid"> Meta Advertisers </li>
+                  <li><img src="assets/images/check-icon.svg" alt="a" class="img-fluid"> <b>Tiktok Creative Center Ads</b></li>
+                  <li><img src="assets/images/check-icon.svg" alt="a" class="img-fluid"> All Dashboard Filters (Adspend filter) </li>
+                  <li><img src="assets/images/check-icon.svg" alt="a" class="img-fluid"> Track 50 Stores </li>
+                  <li><img src="assets/images/check-icon.svg" alt="a" class="img-fluid"> Magic AI Search</li>
+                  <li><img src="assets/images/check-icon.svg" alt="a" class="img-fluid"> 24/7 Customer Service</li> 
+                </ul>
+                <a class="no-underline" href="signup.html"><button type="button" class="btn btn-plan">Start for Free <i class="fa fa-angle-right"></i></button></a>
+                </div>
+              </div>
+            </div> 
+            <div class="col-lg-4">
+              <div class="pricing-box-wrap">
+                <div class="media">
+                  <div class="media-body">
+                    <img src="assets/images/badge.svg" alt="a" class="img-fluid">
+                    <h6>Premium Plan</h6>
+                  </div>
+                  <span>LOCK IN YOUR PRICE</span> 
+                </div> 
+                <p>The biggest plan to maximize your potential of success</p>
+                <h3>€249/<span>mo</span> <span class="badge text-bg-primary discount-old-price">€359/mo</span> </h3>  
+                <ul>
+                  <li><img src="assets/images/check-icon.svg" alt="a" class="img-fluid"> Full Access to Dashboard</li>
+                  <li><img src="assets/images/check-icon.svg" alt="a" class="img-fluid"> Facebook Ads </li>
+                  <li><img src="assets/images/check-icon.svg" alt="a" class="img-fluid"> Meta Advertisers </li>
+                  <li><img src="assets/images/check-icon.svg" alt="a" class="img-fluid"> <b>Tiktok Creative Center Ads</b></li>
+                  <li><img src="assets/images/check-icon.svg" alt="a" class="img-fluid"> All Dashboard Filters (Adspend filter) </li>
+                  <li><img src="assets/images/check-icon.svg" alt="a" class="img-fluid"> Track 500 Stores </li>
+                  <li><img src="assets/images/check-icon.svg" alt="a" class="img-fluid"> Magic AI Search</li>
+                  <li><img src="assets/images/check-icon.svg" alt="a" class="img-fluid"> 24/7 Livechat Customer Service</li> 
+                </ul>
+                <a class="no-underline" href="signup.html"><button type="button" class="btn btn-plan">Start for Free <i class="fa fa-angle-right"></i></button></a>
+              </div>
+            </div> 
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="pricing-box-wrap">
+                <div class="media">
+                  <div class="media-body">
+                    <img src="assets/images/user-icon.svg" alt="a" class="img-fluid">
+                    <h6>Basic Plan</h6>
+                  </div>
+                  <span>LOCK IN YOUR PRICE</span>
+                </div> 
+                <p>Get started with finding new winning products, made for the ones that don&#039;t quit</p>
+                <h3>€441/<span>yr</span> <span class="badge text-bg-primary discount-old-price">€588/yr</span> </h3>  
+                <ul>
+                  <li><img src="assets/images/check-icon.svg" alt="a" class="img-fluid"> Full Access to Dashboard</li>
+                  <li><img src="assets/images/check-icon.svg" alt="a" class="img-fluid"> Facebook Ads </li>
+                  <li><img src="assets/images/check-icon.svg" alt="a" class="img-fluid"> Meta Advertisers </li>
+                  <li><img src="assets/images/check-icon.svg" alt="a" class="img-fluid"> TikTok Ads </li>
+                  <li><img src="assets/images/check-icon.svg" alt="a" class="img-fluid"> Limited Dashboard Filters </li>
+                  <li><img src="assets/images/check-icon.svg" alt="a" class="img-fluid"> Track 25 Stores </li>
+                  <li><img src="assets/images/check-icon.svg" alt="a" class="img-fluid"> Magic AI Search</li> 
+                  <li><img src="assets/images/check-icon.svg" alt="a" class="img-fluid"> 24/7 Customer Service</li> 
+                </ul>
+                <a class="no-underline" href="signup.html"><button type="button" class="btn btn-plan">Start for Free <i class="fa fa-angle-right"></i></button></a>
+              </div>
+            </div> 
+            <div class="col-lg-4">
+              <div class="pricing-box-wrap most-popular">
+                <h4>MOST POPULAR</h4>
+                <div class="inner-wrapper">
+                 
+                <div class="media">
+                  <div class="media-body">
+                    <img src="assets/images/user-icon.svg" alt="a" class="img-fluid">
+                    <h6>Standard Plan</h6>
+                  </div>
+                  <span>LOCK IN YOUR PRICE</span>
+                </div> 
+                <p>The most popular plan if you know you&#039;re never going to quit</p>
+                <h3>€595/<span>yr</span> <span class="badge text-bg-primary discount-old-price">€1192/yr</span> </h3>  
+                <ul>
+                  <li><img src="assets/images/check-icon.svg" alt="a" class="img-fluid"> Full Access to Dashboard</li>
+                  <li><img src="assets/images/check-icon.svg" alt="a" class="img-fluid"> Facebook Ads </li>
+                  <li><img src="assets/images/check-icon.svg" alt="a" class="img-fluid"> Meta Advertisers </li>
+                  <li><img src="assets/images/check-icon.svg" alt="a" class="img-fluid"> TikTok Ads </li>
+                  <li><img src="assets/images/check-icon.svg" alt="a" class="img-fluid"> <b>Tiktok Creative Center Ads</b></li> 
+                  <li><img src="assets/images/check-icon.svg" alt="a" class="img-fluid"> All Dashboard Filters (Adspend filter) </li>
+                  <li><img src="assets/images/check-icon.svg" alt="a" class="img-fluid"> Track 50 Stores</i>
+                  <li><img src="assets/images/check-icon.svg" alt="a" class="img-fluid"> Magic AI Search</li>
+                  <li><img src="assets/images/check-icon.svg" alt="a" class="img-fluid"> 24/7 Customer Service</li> 
+                </ul>
+                <a class="no-underline" href="signup.html"><button type="button" class="btn btn-plan">Start for Free <i class="fa fa-angle-right"></i></button></a>
+                </div>
+              </div>
+            </div> 
+            <div class="col-lg-4">
+              <div class="pricing-box-wrap">
+                <div class="media">
+                  <div class="media-body">
+                    <img src="assets/images/badge.svg" alt="a" class="img-fluid">
+                    <h6>Premium Plan</h6>
+                  </div>
+                  <span>LOCK IN YOUR PRICE</span> 
+                </div> 
+                <p>The biggest plan to maximize your potential of success &amp; save money</p>
+                <h3>€2241/<span>yr</span> <span class="badge text-bg-primary discount-old-price">€3231/yr</span> </h3>  
+                <ul>
+                  <li><img src="assets/images/check-icon.svg" alt="a" class="img-fluid"> Full Access to Dashboard</li>
+                  <li><img src="assets/images/check-icon.svg" alt="a" class="img-fluid"> Facebook Ads </li>
+                  <li><img src="assets/images/check-icon.svg" alt="a" class="img-fluid"> Meta Advertisers </li>
+                  <li><img src="assets/images/check-icon.svg" alt="a" class="img-fluid"> TikTok Ads </li>
+                  <li><img src="assets/images/check-icon.svg" alt="a" class="img-fluid"> <b>Tiktok Creative Center Ads</b></li></li>
+                  <li><img src="assets/images/check-icon.svg" alt="a" class="img-fluid"> All Dashboard Filters (Adspend filter) </li>
+                  <li><img src="assets/images/check-icon.svg" alt="a" class="img-fluid"> Track 500 Stores </li>
+                  <li><img src="assets/images/check-icon.svg" alt="a" class="img-fluid"> Magic AI Search</li>
+                  <li><img src="assets/images/check-icon.svg" alt="a" class="img-fluid"> 24/7 Livechat Customer Service</li> 
+                </ul>
+                <a class="no-underline" href="signup.html"><button type="button" class="btn btn-plan">Start for Free <i class="fa fa-angle-right"></i></button></a>
+              </div>
+            </div> 
+          </div>
+        </div> 
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="price-more"> 
+            <ul>
+              <li><a href="#" class="pricing-feature-label"><img src="assets/images/check-icon.svg" alt="1" class="img-fluid"> Secure 256-bit SSL Encryption</a></li>
+              <li><a href="#" class="pricing-feature-label"><img src="assets/images/check-icon.svg" alt="1" class="img-fluid"> More than 6 payment methods</a></li>
+              <li><a href="#" class="pricing-feature-label"><img src="assets/images/check-icon.svg" alt="1" class="img-fluid"> Cancel anytime</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- pricing section @E -->
+
+  <!-- review section start -->
+<section class="review-section pa-y4">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="common-heading">
+          <h6>REVIEWS</h6>
+          <h2>Read Our Customer Reviews</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4">
+        <!-- review -item start -->
+        <div class="review-item-box">
+          <div class="media">
+            <img src="assets/images/review-avatar-1.png" alt="Avatar" class="img-fluid">
+            <div class="media-body">
+              <h6>Lucas Dubois</h6>
+              <p>Dropshipper</p>
+            </div>
+          </div>
+          <h5>This tool saves me so much time. I've had a team to do product research for me but now that I can do it this efficient I'm better off doing it myself.</h5>
+        </div>
+        <!-- review -item end -->
+        <!-- review -item start -->
+        <div class="review-item-box">
+          <div class="media">
+            <img src="assets/images/review-avatar-2.png" alt="Avatar" class="img-fluid">
+            <div class="media-body">
+              <h6>Maximilian Müller</h6>
+              <p>Dropshipper</p>
+            </div>
+          </div>
+          <h5>Before I got this tool I was spending hours in the Facebook Ad Library searching for my perfect ad. A product that matched my niche, had enough running adsets and that I felt good about throwing my money at.</h5>
+          <h5> Now I can just filter out all the ads that are not to my liking and within a few seconds I have a page full of products I can test. Somehow I would spend hours to even find 1 ad to fit my needs and now I have got so many to test. My winner ratio right now is out of this world.
+          </h5>
+        </div>
+        <!-- review -item end -->
+      </div>
+      <div class="col-lg-4">
+         <!-- review -item start -->
+         <div class="review-item-box">
+          <div class="media">
+            <img src="assets/images/review-avatar-3.png" alt="Avatar" class="img-fluid">
+            <div class="media-body">
+              <h6>Mateo Silva</h6>
+              <p>Dropshipper</p>
+            </div>
+          </div>
+          <h5>I was eager to share the spytool with others at first because it got me ahead of everyone. Some of the features like the TikTok Creative Center are still untapped and only available here.</h5>
+          <h5> I realised though that there are just so many winners that there is no point in gatekeeping. Even if I could compare it to other tools there is nothing even close to an equivalent. They stand out in every aspect of their features.
+          </h5>
+        </div>
+        <!-- review -item end -->
+        <!-- review -item start -->
+        <div class="review-item-box">
+          <div class="media">
+            <img src="assets/images/review-avatar-4.png" alt="Avatar" class="img-fluid">
+            <div class="media-body">
+              <h6>Arjun Patel</h6>
+              <p>Dropshipper</p>
+            </div>
+          </div>
+          <h5>WinningHunter's team listens almost instantly to a feature request or something that I want added. Being able to see the adspend and revenue of the ads gives me so much insights. It saves me hours at the end of the day.</h5>
+        </div>
+        <!-- review -item end -->
+       
+      </div>
+      <div class="col-lg-4">
+        <!-- review -item start -->
+        <div class="review-item-box">
+          <div class="media">
+            <img src="assets/images/review-avatar-5.png" alt="Avatar" class="img-fluid">
+            <div class="media-body">
+              <h6>Alejandro Fernandez</h6>
+              <p>Dropshipper</p>
+            </div>
+          </div>
+          <h5>This tool is out of this world. The TikTok ads along with the Tiktok Creative Center are alien-like. I'd even pay 5k+ for such a tool, they literally dominate every feature. The Return on Investment for this tool is insane, offering all I need for just a few hundred bucks :).</h5>
+        </div>
+        <!-- review -item end -->
+        <!-- review -item start -->
+        <div class="review-item-box">
+          <div class="media">
+            <img src="assets/images/review-avatar-6.png" alt="Avatar" class="img-fluid">
+            <div class="media-body">
+              <h6>Yuta Kimura</h6>
+              <p>Dropshipper</p>
+            </div>
+          </div>
+          <h5>When I was a beginner I used to get a winner every 30 products I tested. This tool saves me so much money in testing ad spend + I don't lose all my motivation while testing crap all day. I find a winner every 3 products now, it's insane. There's literally no competition for me in Product Research. I think that even if you're doing product research completely wrong you will still find winners on accident &#128514;</h5>
+          <h5> 
+          </h5>
+        </div>
+        <!-- review -item end -->
+      </div>
+    </div>
+  </div>
+</section>
+<!-- review section end -->
+  <!-- faq section start -->
+   <section class="faq-section pa-y4">
+    <div class="container">
+      <!-- common heading @S -->
+      <div class="row">
+        <div class="col-md-12">
+          <div class="common-heading">
+            <h6>FAQs</h6>
+            <h2>Frequently Asked Questions</h2>
+          </div>
+        </div>
+      </div>
+      <!-- common heading @E -->
+      <div class="row justify-content-center">
+        <div class="col-lg-8 col-md-10 col-12">
+          <div class="faq-ask-wrap">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    How does WinningHunter work?
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <p>We have every Facebook ad that is live at the moment saved in our database. We let you play with the filtering for those ads. A feature never seen before: Filtering on adset amount. You can find winning products which are just about to scale and crush them with better strategy. </p>
+
+                    <p> </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    How many adsets do you recommend me to filter on?
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <p>Keep in mind that we have every ad that has ran or is running on Facebook, you might get the urge to filter on 20+ or 30+ adsets. In reality advertisers do not tend to duplicate one creative this many times to scale, they rather budget scale aswell. What we recommend is filtering on 6+ or 11+ adsets. Most people test with 5 adsets, if they are running more than 6 it means that they are scaling. If you want to find good products faster you might want to go for a higher number, 8-9-10-11+ but keep in mind to not go too high, we generally recommend not to go higher than 15+.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                    How do I do competitor research?
+                  </button>
+                </h2>
+                <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <p>We suggest tracking the product's store that you want to test and searching for other competitors selling the same product in your country. If there are already numerous competitors running ads for the product in the country where you're advertising, we don't recommend running ads for it as well, as they benefit from Facebook's optimization.
+
+                    To analyze your competitors, check our Facebook ads section for keywords in the product name or ad text. Sometimes, trying translations can help uncover relevant keywords.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                    Why do I find so many winners?
+                  </button>
+                </h2>
+                <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <p>The available filters allow you to view only Dropshipping ads with visible store revenue. When you filter based on their scaling approach and the number of adsets they use for a creative, you can access performance-based analytics. Displaying likes or comment counts doesn't provide valuable insights since you can't determine their scaling strategy or whether the ad is still active.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Can I change my plan later?
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <p>Yes, you can change your plan at any time in the "Profile" page. If you have time left on your previous subscription, the time will be subtracted from the upgrade price and your upgrade will be cheaper. In case you have any questions, feel free to contact our support team.</p>
+
+                    <p></p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingNine">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
+                    How is the Ad Score determined?
+                  </button>
+                </h2>
+                <div id="flush-collapseNine" class="accordion-collapse collapse" aria-labelledby="flush-headingNine"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <p>The Ad Score is calculated with the amount of adspend, the amount of days running and how they are scaling. This data is analysed with marketing knowledge in Facebook Ads and that way the ad can be seperated into 3 categories: Testing, Scaling, Winning.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                    How can I cancel?
+                  </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <p>WinningHunter is billed monthly or annually through Stripe. You can change or cancel your plan at any time by clicking on your name at the top right, Press "Manage Plan". In case you have any questions, feel free to contact our support team. </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingEight">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+                    Why choose WinningHunter over other platforms?
+                  </button>
+                </h2>
+                <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <p>Unlimited ads, no credits, better insights, Tiktok & Facebook ads in one, way cheaper, no risk involved, 24/7 support, used by 8 figure dropshippers.</p>
+                    <p>We have contributed to generating over 500 million in sales for our users, so why not choose the easy route?</p>
+                  </div>
+                </div>
+              </div>
+<!--               <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+                  </button>
+                </h2>
+                <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <p>Cras lobortis faucibus ultricies. Cras pellentesque ex sed leo viverra, quis sodales mi tincidunt. Etiam bibendum arcu velit, ut maximus augue accumsan nec. Suspendisse vehicula elementum quam, quis ultricies lorem viverra at. Maecenas malesuada orci nec tincidunt dapibus. In dolor mauris, posuere at neque lobortis. </p>
+
+                    <p>Venenatis ultrices arcu. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque lacinia turpis mi, quis elementum massa posuere ut. In vestibulum magna a odio ornare, vitae placerat dui vestibulum. </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingSix">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+                  </button>
+                </h2>
+                <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <p>Cras lobortis faucibus ultricies. Cras pellentesque ex sed leo viverra, quis sodales mi tincidunt. Etiam bibendum arcu velit, ut maximus augue accumsan nec. Suspendisse vehicula elementum quam, quis ultricies lorem viverra at. Maecenas malesuada orci nec tincidunt dapibus. In dolor mauris, posuere at neque lobortis. </p>
+
+                    <p>Venenatis ultrices arcu. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque lacinia turpis mi, quis elementum massa posuere ut. In vestibulum magna a odio ornare, vitae placerat dui vestibulum. </p>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div>
+  </section>
+  <!-- faq section end -->
+  <!-- join section start -->
+<section class="join-section">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-7">
+        <div class="join-txt">
+          <img src="images/webclip.png" alt="Icon" class="img-fluid logo-36">
+          <h5>Try WinningHunter Today</h5>
+          <p>Discover winning products effortlessly with WinningHunter.  Take your ecommerce journey to <br> the next level and find success with our powerful product research tool. </p>
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <div class="join-bttn">
+          <h5>Get Started Today</h5>
+          <a href="signup.html">Get Started <i class="fa fa-angle-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- join section end -->
+
+<!-- footer section start -->
+  <footer class="footer_section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-8 col-12">
+          <div class="ftr-logo">
+            <a href="index.html">
+              <img src="images/webclip.png" alt="Logo" class="img-fluid logo-36">
+            </a>
+            <p>We already know what works before you even have the chance to blink!</p> 
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-3 col-6">
+          <div class="ftr-links">
+            <h6>ACCOUNT</h6>
+            <ul>
+              <li><a href="signup.html">Create Account</a></li>
+              <li><a href="login.html">Log In</a></li>
+              <li><a href="https://partner.winninghunter.com/">Affiliate Program</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-3 col-6">
+          <div class="ftr-links">
+            <h6>PRICING</h6>
+            <ul>
+              <li><a href="pricing.html">Basic</a></li>
+              <li><a href="pricing.html">Standard</a></li>
+              <li><a href="pricing.html">Premium</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-3 col-6">
+          <div class="ftr-links">
+            <h6>EXPLORE</h6>
+            <ul>
+              <li><a href="index.html#features">Features</a></li>
+              <li><a href="faq.html">FAQs</a></li>
+              <li><a href="index.html#reviews">Reviews</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-3 col-6">
+          <div class="ftr-links">
+            <h6>LEGAL</h6>
+            <ul>
+              <li><a href="terms.html">Terms of Service</a></li>
+              <li><a href="privacy.html">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div> 
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="brdr-top"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="ftr-copy">
+            <p>© 2024 <a href="#">WinningHunter.com</a> | All Rights Reserved</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="ftr-social">
+<!--             <ul> 
+              <li><a href="#"><i class="fa fa-paper-plane"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+              <li><a href="#"><i class="fa fa-instagram"></i></a></li> 
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li> 
+            </ul> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer section end -->
+  <!-- back to top button @S -->
+  <!-- <a href="#" id="back-to-top">&#8593;</a> -->
+  <!-- back to top button @E -->
+
+  <!-- Bootstrap Bundle with Popper JS start -->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script src="assets/js/back-to-top.js"></script>
+
+   <!-- faq script -->
+   <script>
+
+    let cards = [...document.querySelectorAll(".accordion-item")];
+    cards.forEach(card => {
+      card.addEventListener("click", function () {
+        cards.forEach(c => c.classList.remove("border-custom"));
+        this.classList.add("border-custom")
+      })
+    });
+  </script>
+
+</body>
+
+
+<!-- Mirrored from winninghunter.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 07 Apr 2024 11:53:52 GMT -->
 </html>
