@@ -1,0 +1,242 @@
+.navbar {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);
+  padding: 8px 6vw 8px 6vw;
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .brand {
+      color: #000000;
+      text-decoration: none;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 8px;
+      font-size: large;
+      font-weight: 900;
+
+      img {
+        margin-right: 4px;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);
+        width: 35px;
+        color: $primary-color;
+      }
+    }
+
+    .topnav {
+      display: flex;
+  
+      .topnav-link {
+        flex-direction: row;
+        text-decoration: none;
+        padding: 10px;
+        margin-right: 8px;
+        border-radius: $border-radius;
+        font-size: small;
+        font-weight: 900;
+
+        &:visited, &:link {
+          color: $primary-color;
+        }
+  
+        &:hover {
+          background-color: change-color($color: #000000, $alpha: 0.1);
+          color: $primary-color;
+        }
+      }
+  
+      .active {
+        background-color: change-color($color: $primary-color, $alpha: 0.1);
+        color: $primary-color;
+      }
+    }
+
+    .actions {
+      display: flex;
+      align-items: center;
+      justify-content: right;
+      flex-grow: 1;
+
+      .btn {
+        border: none;
+        padding: 8px;
+        border-radius: $border-radius;
+        margin-left: 8px;
+      }
+
+      .btn-primary {
+        background-color: $primary-color;
+        color: $on-primary-color;
+      }
+
+      .btn-avatar {
+        border: none;
+        //border-radius: 50%;
+        margin-left: 8px;
+
+        .avatar {
+          border-radius: 50%;
+          width: 50px;
+          height: 50px;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}
+
+.top-banner {
+  background-color: $primary-color;
+
+  a {
+    display: block;
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+    padding: $padding;
+    &:visited, &:link {
+      color: $on-primary-color;
+    }
+  }
+}
+
+.s-navbar {
+  padding: 3vw 8vw 3vw 8vw;
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .brand {
+      display: flex;
+      flex-direction: row;
+
+      a {
+        color: #000000;
+        text-decoration: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 8px;
+        font-size: larger;
+        font-weight: bold;
+  
+        img {
+          margin-right: 4px;
+          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);
+          width: 35px;
+          color: $primary-color;
+        }
+      }
+
+      .toggler-container {
+        display: none;
+        flex-grow: 8;
+        text-align: right;
+      }
+    }
+
+    .nav {
+      display: flex;
+      flex-direction: row;
+      flex-grow: 8;
+      justify-content: center;
+  
+      .nav-link {
+        text-decoration: none;
+        padding: 12px;
+        margin-right: 8px;
+        border-radius: $border-radius;
+        font-size:medium;
+        transition: all 0.2s;
+
+        &:visited, &:link {
+          color: $primary-color;
+        }
+  
+        &:hover {
+          background-color: $primary-color;
+          color: $on-primary-color;
+        }
+      }
+  
+      .active {
+        background-color: $primary-color;
+        color: $on-primary-color;
+
+        &:visited, &:link {
+          color: $on-primary-color;
+        }
+      }
+    }
+
+    .actions {
+      display: flex;
+      align-items: center;
+      justify-content: right;
+
+      a {
+        text-decoration: none;
+        padding: 12px 18px 12px 18px;
+        margin-right: 8px;
+        border-radius: $border-radius;
+        font-size:medium;
+        transition: all 0.2s;
+      }
+
+      .login {
+        background-color: $on-primary-color;
+        color: $primary-color;
+        border: 1px solid $primary-color;
+
+        &:visited, &:link {
+          color: $primary-color;
+        }
+
+        &:hover {
+          background-color: $primary-color;
+          color: $on-primary-color;
+        }
+      }
+
+      .sign-up {
+        background-color: $primary-color;
+        color: $on-primary-color;
+        border: 1px solid $primary-color;
+
+        &:visited, &:link {
+          color: $on-primary-color;
+        }
+
+        &:hover {
+          background-color: $on-primary-color;
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 990px) {
+  .s-navbar {
+    .container {
+      flex-direction: column;
+      .brand {
+        width: 100%;
+        align-items: center;
+        .toggler-container {
+          display: block !important;
+        }
+      }
+      .nav {
+        flex-direction: column;
+        width: 100%;
+        .nav-link {
+          text-align: center;
+        }
+      }
+    }
+  }
+}

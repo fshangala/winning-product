@@ -1,0 +1,17 @@
+.input-group {
+  .input {
+    border-radius: $border-radius;
+    border-style: outset;
+    border: $border;
+    padding: 8px;
+    background-color: $on-primary-color;
+  }
+  label {
+    display: block;
+    font-weight: bold;
+    font-size: small;
+  }
+  .active {
+    border: $active-input-border;
+  }
+}

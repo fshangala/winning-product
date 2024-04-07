@@ -1,0 +1,64 @@
+@import "theme";
+@import "layout";
+@import "nav";
+@import "input";
+@import "menu";
+@import "section";
+@import "footer";
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.fg-primary {
+  color: $primary-color;
+}
+
+.main {
+  padding: 8px 6vw 8px 6vw;
+
+  .header-container {
+    margin-top: 24px;
+    margin-bottom: 24px;
+
+    .header {
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 50px;
+        height: 50px;
+        margin-right: 8px;
+      }
+
+      h1 {
+        margin: 0;
+      }
+    }
+
+    .divider {
+      border: $border;
+      margin: 0;
+    }
+  }
+
+  .filter-container {
+    box-shadow: $shadow;
+    padding: 16px;
+    border-radius: $border-radius;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items:flex-end;
+
+    .filter {
+      padding: 8px;
+    }
+  }
+}
+
+.s-main {
+  padding: 3vw 8vw 3vw 8vw;
+}

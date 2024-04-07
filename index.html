@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Winning Product</title>
+    <link href="assets/css/style.css" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <a href="home.html" class="brand">
+          <img src="assets/images/logo.svg" alt="logo">
+          <b>Winning Product</b>
+        </a>
+        <div class="topnav">
+          <a href="#" class="topnav-link active">Facebook Ads</a>
+          <a href="#" class="topnav-link">Meta Advertisers</a>
+          <a href="#" class="topnav-link">Tiktok Creative Center</a>
+          <a href="#" class="topnav-link">Sales Tracker</a>
+          <a href="#" class="topnav-link">Magic AI</a>
+          <a href="#" class="topnav-link">Saved Ads</a>
+        </div>
+        <div class="actions">
+          <button class="btn btn-primary">Upgrade</button>
+          <button class="btn">Tutorials</button>
+          <button class="btn-avatar">
+            <img src="assets/images/user.jpg" alt="user" class="avatar" />
+          </button>
+        </div>
+      </div>
+    </nav>
+    <div class="main">
+      <div class="header-container">
+        <div class="header">
+          <img src="assets/images/facebook.svg" alt="facebook" />
+          <h1>Search Facebook Ads</h1>
+        </div>
+        <hr class="divider">
+      </div>
+      <div class="filter-container" x-data="facebookFilter">
+        <div class="input-group filter">
+          <input type="text" name="search" class="input" placeholder="Search..." />
+        </div>
+        <div class="input-group filter">
+          <label>Search Keyword In</label>
+          <select class="input" x-model="keywordIn">
+            <option value="all">All</option>
+            <option value="ad-text">Ad Text</option>
+          </select>
+        </div>
+        <div class="input-group filter">
+          <label>Country</label>
+          <select class="input" x-model="country">
+            <option value="usa">USA</option>
+            <option value="united-kingdom">United Kingdom</option>
+          </select>
+        </div>
+        <div class="input-group filter">
+          <label>Website</label>
+          <select class="input" x-model="website">
+            <option value="shopify">Shopify</option>
+            <option value="xshoppy">XShoppy</option>
+          </select>
+        </div>
+        <div class="input-group filter">
+          <label>Language</label>
+          <select class="input" x-model="language">
+            <option value="english">English</option>
+            <option value="french">French</option>
+          </select>
+        </div>
+        <div class="input-group filter" x-data="{openActiveAdsetsSelector:false}">
+          <label>Active Adsets</label>
+          <div class="dropdown">
+            <button type="button" x-text="activeAdSets()" class="input" @click="openActiveAdsetsSelector= !openActiveAdsetsSelector"></button>
+            <div class="dropdown-content" x-show="openActiveAdsetsSelector">
+              <div class="input-group">
+                <label>Minimum</label>
+                <input type="number" class="input" x-model="activeAdSetsMin">
+              </div>
+              <div class="input-group">
+                <label>Maximum</label>
+                <input type="number" class="input" x-model="activeAdSetsMax">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="input-group filter" x-data="{openAdspendSelector:false}">
+          <label>Adspend</label>
+          <div class="dropdown">
+            <button type="button" x-text="adspend()" class="input" @click="openAdspendSelector= !openAdspendSelector"></button>
+            <div class="dropdown-content" x-show="openAdspendSelector">
+              <div class="input-group">
+                <label>Minimum</label>
+                <input type="number" class="input" x-model="adspendMin">
+              </div>
+              <div class="input-group">
+                <label>Maximum</label>
+                <input type="number" class="input" x-model="adspendMax">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="input-group filter">
+          <label>Sort By</label>
+          <select class="input" x-model="sortBy">
+            <option value="consistency">Consistency</option>
+            <option value="french">French</option>
+          </select>
+        </div>
+        <div class="input-group filter">
+          <button class="input" x-bind:class="sortDirection == 'ascending' ? 'active' : ''" @click="sortDirection='ascending'">
+            <div class="row">
+              <img src="assets/images/arrow.svg" width="25px">
+              <img src="assets/images/sort.svg" width="25px">
+            </div>
+          </button>
+          <button class="input" x-bind:class="sortDirection == 'ascending' ? '' : 'active'" @click="sortDirection='descending'">
+            <div class="row">
+              <img src="assets/images/arrow.svg" style="transform: scaleY(-1);" width="25px">
+              <img src="assets/images/sort.svg" width="25px">
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
