@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Winning Product</title>
     <link href="assets/dashboard/css/style.css" rel="stylesheet">
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
   </head>
   <body>
@@ -40,7 +41,7 @@
       </div>
       <div class="filter-container" x-data="facebookFilter">
         <div class="input-group filter">
-          <input type="text" name="search" class="input" placeholder="Search..." />
+          <input type="text" name="search" class="input" placeholder="Search..." x-model="search" />
         </div>
         <div class="input-group filter">
           <label>Search Keyword In</label>
@@ -131,7 +132,85 @@
             <option value="down-scaling-only">Down Scaling Only</option>
           </select>
         </div>
+        <div class="input-group filter">
+          <label>Media Type</label>
+          <select class="input" x-model="mediaType">
+            <option value="videos">Videos</option>
+            <option value="images">Images</option>
+            <option value="carousel">Carousel</option>
+          </select>
+        </div>
+        <div class="input-group filter">
+          <label>Page Type</label>
+          <select class="input" x-model="pageType">
+            <option value="product-pages">Product Pages</option>
+            <option value="collection-pages">Collection Pages</option>
+            <option value="funnels">Funnels</option>
+            <option value="no-funnels">No Funnels</option>
+          </select>
+        </div>
+        <div class="input-group filter">
+          <label>Niche</label>
+          <select class="input" x-model="niche">
+            <option value="product-pages">Beauty</option>
+            <option value="car">car</option>
+            <option value="clothing">Clothing</option>
+            <option value="clothing-brands">Clothing brands</option>
+            <option value="children">Children</option>
+            <option value="general">Genral</option>
+            <option value="home">Home</option>
+            <option value="pets">Pets</option>
+          </select>
+        </div>
+        <div class="input-group filter">
+          <label>Ad Creation Date</label>
+          <input type="date" class="input" x-model="adCreationDate"/>
+        </div>
+        <div class="input-group filter">
+          <label>Last Seen Date</label>
+          <input type="date" class="input" x-model="lastSeenDate"/>
+        </div>
+        <div class="input-group filter">
+          <label>Product Creation date</label>
+          <input type="date" class="input" x-model="productCreationDate"/>
+        </div>
       </div>
+      <div class="ad-container">
+        <div class="ad">
+          <div class="ad-top">
+            <button class="btn">4</button>
+          </div>
+          <div class="ad-header"></div>
+          <div class="ad-description"></div>
+          <div class="ad-image">
+            <img src="images/fb-ad.PNG" alt="fb-ad" />
+          </div>
+          <div class="ad-title"></div>
+          <div class="ad-details"></div>
+          <div class="ad-footer"></div>
+        </div>
+        <div class="ad">
+          <div class="ad-header"></div>
+          <div class="ad-description"></div>
+          <div class="ad-image">
+            <img src="images/fb-ad.PNG" alt="fb-ad" />
+          </div>
+          <div class="ad-title"></div>
+          <div class="ad-details"></div>
+          <div class="ad-footer"></div>
+        </div>
+        <div class="ad">
+          <div class="ad-header"></div>
+          <div class="ad-description"></div>
+          <div class="ad-image">
+            <img src="images/fb-ad.PNG" alt="fb-ad" />
+          </div>
+          <div class="ad-title"></div>
+          <div class="ad-details"></div>
+          <div class="ad-footer"></div>
+        </div>
+      </div>
+      <div x-text="$store.user.supabaseUrl"></div>
     </div>
     <script src="assets/js/main.js"></script>
   </body>
