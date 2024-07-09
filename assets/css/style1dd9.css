@@ -186,7 +186,7 @@ lottie-player {
   border-radius: 10px;
   background: var(--primary-color);
   box-shadow: 0px 0px 25px 0px rgba(11, 105, 255, 0.25);
-  color: #FFF !important;
+  color: #FFF;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -202,7 +202,7 @@ lottie-player {
 }
 .header-section .d-flex a:last-child:hover {
   background-color: #fff;
-  color: var(--primary-color);
+  color: var(--primary-color) !important;
 }
 
 /* header css end */
