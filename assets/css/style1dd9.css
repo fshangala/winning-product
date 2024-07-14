@@ -163,7 +163,7 @@ lottie-player {
   border-radius: 10px;
   border: 1px solid var(--primary-color);
   background: #FFF;
-  box-shadow: 0px 0px 25px 0px rgba(11, 105, 255, 0.25);
+  box-shadow: 0px 0px 25px 0px rgba(94, 142, 57, 0.25);
   color: var(--primary-color);
   font-size: 16px;
   font-style: normal;
@@ -185,7 +185,7 @@ lottie-player {
 .header-section .d-flex a:last-child {
   border-radius: 10px;
   background: var(--primary-color);
-  box-shadow: 0px 0px 25px 0px rgba(11, 105, 255, 0.25);
+  box-shadow: 0px 0px 25px 0px rgba(94, 142, 57, 0.25);
   color: #FFF;
   font-size: 16px;
   font-style: normal;
@@ -290,7 +290,7 @@ lottie-player {
 .hero-txt-wrap .hero_btn a:first-child, .free-trial-button {
   border-radius: 11.383px;
   background: var(--primary-color);
-  box-shadow: 0px 0px 25px 0px rgba(11, 105, 255, 0.25);
+  box-shadow: 0px 0px 25px 0px rgba(94, 142, 57, 0.25);
   color: #FFF;
   font-size: 20px;
   font-style: normal;
@@ -306,7 +306,7 @@ lottie-player {
 .hero-txt-wrap .hero_btn a:first-child:hover, .free-trial-button:hover {
   background: #111822;
   color: #FFF;
-  box-shadow: 0px 0px 25px 0px rgba(11, 105, 255, 1.55);
+  box-shadow: 0px 0px 25px 0px rgba(94, 142, 57, 1.55);
 }
 
 .trustpilot-box .media {
@@ -399,7 +399,7 @@ lottie-player {
 .feature-main-wrapper .feature-box-item {
   border-radius: 4.666px;
   background: #FFF;
-  box-shadow: 0px 0px 25px 0px rgba(11, 105, 255, 0.25);
+  box-shadow: 0px 0px 25px 0px rgba(94, 142, 57, 0.25);
   padding: 1.2rem;
   max-width: 94%;
   text-align: center;
@@ -447,7 +447,7 @@ lottie-player {
 .read-more a {
   border-radius: 10.326px;
   background: var(--primary-color);
-  box-shadow: 0px 0px 30.9767417908px 0px #26A7F3;
+  box-shadow: 0px 0px 30.9767417908px 0px #5b8a3a;
   color: #FFF;
   font-size: 16.521px;
   font-style: normal;
@@ -468,7 +468,7 @@ lottie-player {
 .dashboard-section .dashboard-main-wrap {
   border-radius: 25px;
   background: var(--primary-color);
-  box-shadow: 0px 0px 250px 0px rgba(38, 167, 243, 0.15);
+  box-shadow: 0px 0px 250px 0px rgba(94, 142, 57, 0.15);
 }
 .dashboard-section .dashboard-main-wrap .dashboard-txt {
   padding: 2rem 4rem 0;
@@ -571,7 +571,7 @@ lottie-player {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  box-shadow: 0px 0px 250px 0px rgba(38, 167, 243, 0.15);
+  box-shadow: 0px 0px 250px 0px rgba(94, 142, 57, 0.15);
   padding: 4rem 5rem;
   text-align: center;
 }
@@ -630,7 +630,7 @@ lottie-player {
   border-radius: 10.86px;
   background: var(--primary-color);
   padding: 1.5rem 2.5rem;
-  box-shadow: 0px 0px 250px 0px rgba(38, 167, 243, 0.15);
+  box-shadow: 0px 0px 250px 0px rgba(94, 142, 57, 0.15);
   text-align: center;
 }
 .quote-txt h6 {
@@ -645,7 +645,7 @@ lottie-player {
 
 .dashboard-2-wrap .dashboard-main-wrap {
   background: #1F1F1F;
-  box-shadow: 0px 0px 250px 0px rgba(38, 167, 243, 0.15);
+  box-shadow: 0px 0px 250px 0px rgba(94, 142, 57, 0.15);
 }
 .dashboard-2-wrap .dashboard-main-wrap .dashboard-img {
   text-align: center;
@@ -670,7 +670,7 @@ lottie-player {
 .save-section-txt a {
   border-radius: 9.902px;
   background: var(--primary-color);
-  box-shadow: 0px 0px 87.3791046143px 0px rgba(38, 167, 243, 0.5);
+  box-shadow: 0px 0px 87.3791046143px 0px rgba(94, 142, 57, 0.5);
   color: #FFF;
   font-size: 17px;
   font-style: normal;
@@ -691,7 +691,7 @@ lottie-player {
 .save-price-box {
   border-radius: 15px;
   background: var(--primary-color);
-  box-shadow: 0px 0px 250px 0px rgba(38, 167, 243, 0.15);
+  box-shadow: 0px 0px 250px 0px rgba(94, 142, 57, 0.15);
   padding: 1.5rem 2rem;
 }
 .save-price-box ul {
@@ -728,7 +728,7 @@ lottie-player {
 .without-txt {
   border: 1px solid rgba(0, 0, 0, 0.1);
   background: #FFF;
-  box-shadow: 0px 0px 250px 0px rgba(38, 167, 243, 0.15);
+  box-shadow: 0px 0px 250px 0px rgba(94, 142, 57, 0.15);
 }
 .without-txt h6 {
   color: #181818 !important;
@@ -779,7 +779,7 @@ lottie-player {
   border-radius: 10px;
   background: #FFF;
   padding: 2rem;
-  box-shadow: 0px 0px 25px 0px rgba(11, 105, 255, 0.25);
+  box-shadow: 0px 0px 25px 0px rgba(94, 142, 57, 0.25);
 }
 
 .pricing-box-wrap button {
@@ -849,7 +849,7 @@ lottie-player {
   font-size: 22px;
 }
 .pricing-box-wrap h3 .badge {
-  background: rgba(11, 105, 255, 0.75) !important;
+  background: rgba(94, 142, 57, 0.75) !important;
   font-size: 0.8rem;
 }
 .pricing-box-wrap ul {
@@ -896,7 +896,7 @@ lottie-player {
 
 .most-popular {
   background-color: #1F2122;
-  box-shadow: 0px 0px 250px 0px rgba(38, 167, 243, 0.15);
+  box-shadow: 0px 0px 250px 0px rgba(94, 142, 57, 0.15);
   border-radius: 10px;
   padding: 0.5rem;
 }
@@ -941,7 +941,7 @@ lottie-player {
 .review-item-box {
   border-radius: 10.86px;
   background: #FFF;
-  box-shadow: 0px 0px 25px 0px rgba(11, 105, 255, 0.25);
+  box-shadow: 0px 0px 25px 0px rgba(94, 142, 57, 0.25);
   padding: 1.5rem;
   margin-bottom: 1.5rem;
 }
@@ -991,7 +991,7 @@ lottie-player {
   border-radius: 11.301px;
   background: #FFF;
   padding: 1rem 2rem;
-  box-shadow: 0px 0px 25px 0px rgba(11, 105, 255, 0.25);
+  box-shadow: 0px 0px 25px 0px rgba(94, 142, 57, 0.25);
   margin-bottom: 1rem;
   border: 2px solid transparent;
 }
@@ -1171,7 +1171,7 @@ lottie-player {
 .common-button {
   border-radius: 10px;
   background: var(--primary-color);
-  box-shadow: 0px 0px 25px 0px rgba(11, 105, 255, 0.25);
+  box-shadow: 0px 0px 25px 0px rgba(94, 142, 57, 0.25);
   color: #FFF;
   font-size: 16px;
   font-style: normal;
